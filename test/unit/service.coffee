@@ -33,7 +33,20 @@ describe 'mg-srt', ->
 		it 'should understand multi empty line', ->
 			obj = Srt.parse("1\n00:00:06,386 --> 00:00:07,711\nMon Text\n\n\n\n\n\n2\n00:00:16,386 --> 00:00:17,711\nMon Text2")[1]
 			expect( obj.text ).toBe('Mon Text2')
-		
+
+		it 'should understand multi text line', ->
+			obj = Srt.parse("1\n00:00:06,386 --> 00:00:07,711\nMon Text\nest sur\nplusieurs lignes")[0]
+			expect( obj.text ).toBe('Mon Text\nest sur\nplusieurs lignes')
+
+		it 'should raise an error if it is malformed', ->
+			fn = ->
+				obj = Srt.parse("1\n00:00:06,386 --> 00:00:07,711")[0]
+			expect( fn ).toThrow()
+			
+		it 'should raise an error if it is malformed #2', ->
+			fn = ->
+				obj = Srt.parse("1\n00:00:06,386 --> 00:00:07,711\nMon text\n\n2\neee\nMon text")[0]
+			expect( fn ).toThrow()
 
 	describe 'toSeconds() -', ->
 		it 'test #1', ->

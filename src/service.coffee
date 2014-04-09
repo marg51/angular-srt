@@ -15,7 +15,7 @@ app.factory 'SrtService', ->
 			sub = el.split "\n"
 			if sub.length > 3
 				sub[2] = sub.slice(2).join "\n"
-			if sub.length is 3
+			if sub.length > 2 and sub[1].match(/\ --> /)
 				obj.id = parseInt(sub[0])-1
 				time = sub[1].split(" --> ")
 				obj.start = $scope.toSeconds time[0]
@@ -23,6 +23,8 @@ app.factory 'SrtService', ->
 				obj.text = sub[2].replace(/^\s+|\s+$/g,"") # trim()
 
 				subtitles.push obj
+			else 
+				throw new Error("Malformed subtitle ##{key+1}")
 
 		return subtitles
 
