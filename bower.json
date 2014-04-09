@@ -1,0 +1,18 @@
+{
+  "name": "mg-srt",
+  "version": "0.0.1",
+  "authors": [
+    "Laurent Margirier <laurent.margirier@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular-mocks": "~1.2.14",
+    "angular": "~1.2.14"
+  }
+}

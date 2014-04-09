@@ -1,0 +1,18 @@
+{
+  "name": "mg-srt",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0"
+  },
+  "dependencies": {
+    "grunt-contrib-clean": "~0.5.0",
+    "karma-script-launcher": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.2",
+    "karma-firefox-launcher": "~0.1.3",
+    "karma-jasmine": "~0.1.5",
+    "karma-coffee-preprocessor": "~0.1.3",
+    "karma": "~0.10.9",
+    "grunt-karma": "~0.6.2"
+  }
+}
