@@ -1,4 +1,4 @@
-app = angular.module 'mg-srt-mock', []
+app = angular.module 'uto.srt-mock', []
 
 app.factory 'srtMock', ->
 	mock = []

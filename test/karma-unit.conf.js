@@ -5,7 +5,7 @@ module.exports = function(config) {
       'bower_components/angular-mocks/angular-mocks.js',
       
       'src/*.coffee',
-      'test/mg-srt-mock.coffee',
+      'test/uto-srt-mock.coffee',
       'test/unit/*.coffee'
     ],
     basePath: '../',

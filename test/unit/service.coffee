@@ -1,9 +1,9 @@
-describe 'mg-srt', ->
+describe 'uto.srt', ->
 	Srt = Subtitles = mock = base = undefined
 
 
-	beforeEach module('mg-srt')
-	beforeEach module('mg-srt-mock')
+	beforeEach module('uto.srt')
+	beforeEach module('uto.srt-mock')
 
 	beforeEach inject (SrtService, srtMock, srtMockBase) ->
 		Srt = SrtService

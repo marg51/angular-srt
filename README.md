@@ -1,4 +1,4 @@
-# mg-srt
+# angular-srt
 
 AngularJS SRT parser and stringifier
 
@@ -7,7 +7,7 @@ AngularJS SRT parser and stringifier
 #### Load the dependency
 
 ```javascript
-var app = angular.module('myApp', ['mg-srt']);
+var app = angular.module('myApp', ['uto.srt']);
 ```
 
 #### Use the service

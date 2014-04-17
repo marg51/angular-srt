@@ -1,4 +1,4 @@
-app = angular.module 'mg-srt', []
+app = angular.module('uto.srt', [])
 
 app.factory 'SrtService', ->
 	$scope = {}

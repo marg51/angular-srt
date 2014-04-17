@@ -1,5 +1,5 @@
 {
-  "name": "mg-srt",
+  "name": "angular-srt",
   "version": "0.0.1",
   "authors": [
     "Laurent Margirier <laurent.margirier@gmail.com>"
@@ -9,10 +9,15 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "src",
+    "Gruntfile.coffee",
+    "package.json"
   ],
+  "devDependencies": {
+    "angular-mocks": "~1.2.14"
+  },
   "dependencies": {
-    "angular-mocks": "~1.2.14",
     "angular": "~1.2.14"
   }
 }
